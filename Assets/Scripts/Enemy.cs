@@ -1,21 +1,47 @@
-using System;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class Enemy : MonoBehaviour
 {
     private Player _target;
     [SerializeField] private HealthBar _healthBar;
     [SerializeField] private int _hp = 2;
+    [SerializeField] private Rigidbody[] _rigidbodies;
+    [SerializeField] private Collider[] _colliders;
+    private int _defaultLayer = 1;
+    private bool _isRagdoll;
 
     private void Start()
     {
         _target = FindObjectOfType<Player>();
         _healthBar.SetMaxHp(_hp);
+        DisableRagdoll();
     }
 
     private void Update()
     {
-        transform.LookAt(_target.transform.position, Vector3.up);
+        if(_isRagdoll && _hp > 0)
+            transform.LookAt(_target.transform.position, Vector3.up);
+    }
+
+    private void EnableRagdoll()
+    {
+        _isRagdoll = true;
+        foreach (var rigidbody in _rigidbodies)
+            rigidbody.isKinematic = false;
+
+        foreach (var collider in _colliders)
+            collider.enabled = true;
+    }
+    
+    private void DisableRagdoll()
+    {
+        _isRagdoll = false;
+        foreach (var rigidbody in _rigidbodies)
+            rigidbody.isKinematic = true;
+
+        foreach (var collider in _colliders)
+            collider.enabled = false;
     }
 
     private void GetDamage()
@@ -30,7 +56,8 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         _healthBar.gameObject.SetActive(false);
-        Destroy(gameObject);
+        EnableRagdoll();
+        gameObject.layer = _defaultLayer;
     }
 
     private void OnTriggerEnter(Collider other)
