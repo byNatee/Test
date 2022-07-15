@@ -200,7 +200,7 @@ PrefabInstance:
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 4144dc40cf3e01f468612513b4e4e8e6, type: 3}
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -377,7 +377,7 @@ PrefabInstance:
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 4144dc40cf3e01f468612513b4e4e8e6, type: 3}
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -1409,7 +1409,7 @@ PrefabInstance:
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 4144dc40cf3e01f468612513b4e4e8e6, type: 3}
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -1818,7 +1818,7 @@ PrefabInstance:
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 4144dc40cf3e01f468612513b4e4e8e6, type: 3}
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -1995,7 +1995,7 @@ PrefabInstance:
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 4144dc40cf3e01f468612513b4e4e8e6, type: 3}
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1
@@ -4255,7 +4255,7 @@ PrefabInstance:
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_Avatar
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 9000000, guid: 4144dc40cf3e01f468612513b4e4e8e6, type: 3}
     - target: {fileID: 3459423796250638854, guid: d251da7d374788c48927f96fce8cd286, type: 3}
       propertyPath: m_ApplyRootMotion
       value: 1

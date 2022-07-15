@@ -2823,10 +2823,10 @@ Animator:
   m_GameObject: {fileID: 7902036022186277574}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 4144dc40cf3e01f468612513b4e4e8e6, type: 3}
-  m_Controller: {fileID: 9100000, guid: 63a41f66d56cb59419e12e44f16ccc49, type: 2}
+  m_Controller: {fileID: 9100000, guid: af50a50d22636b248a226b7e7e19eede, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
-  m_ApplyRootMotion: 1
+  m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class Enemy : MonoBehaviour
 {
@@ -8,11 +7,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int _hp = 2;
     [SerializeField] private Rigidbody[] _rigidbodies;
     [SerializeField] private Collider[] _colliders;
+    private Animator _animator;
     private int _defaultLayer = 1;
     private bool _isRagdoll;
 
     private void Start()
     {
+        _animator = GetComponent<Animator>();
         _target = FindObjectOfType<Player>();
         _healthBar.SetMaxHp(_hp);
         DisableRagdoll();
@@ -20,7 +21,7 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
-        if(_isRagdoll && _hp > 0)
+        if(!_isRagdoll)
             transform.LookAt(_target.transform.position, Vector3.up);
     }
 
@@ -56,6 +57,7 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         _healthBar.gameObject.SetActive(false);
+        _animator.avatar = null;
         EnableRagdoll();
         gameObject.layer = _defaultLayer;
     }
